@@ -1,0 +1,65 @@
+.button {
+  padding: 17px 67px;
+  background: $yellow;
+  background: $gradient;
+  box-shadow: $box-shadow;
+  border-radius: 60px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 29px;
+  color: #2B2C31;
+
+  @media (max-width: 768px) {
+    padding: 12px 47px;
+  }
+
+  &--lg {
+    padding: 20px 100px;
+
+    @media (max-width: 768px) {
+      padding: 15px 80px;
+    }
+  }
+
+  &--sm {
+    padding: 17px 57px;
+
+    @media (max-width: 768px) {
+      padding: 12px 37px;
+    }
+  }
+
+  &:hover {
+    background: linear-gradient(90deg, #F2C94C 100%, #F2C94C 100%);
+  }
+}
+
+.btn-login {
+  display: none;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  color: $white;
+  border-radius: 20px;
+  background: transparent;
+  border: 1px solid $accent;
+  box-shadow: none;
+  padding: 5px 17px;
+
+
+  &:hover {
+    background: $white;
+    border: 1px solid $white;
+    color: $accent;
+  }
+
+  @media (max-width: 768px) {
+    display: inline-flex;
+  }
+
+  @media (max-width: 475px) {
+    padding: 3px 12px;
+  }
+}

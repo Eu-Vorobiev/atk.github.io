@@ -1,0 +1,1176 @@
+<!DOCTYPE html>
+<html lang="ru_RU">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ATK</title>
+
+  <link rel="stylesheet" href="fonts/Circe/stylesheet.css">
+
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/slick-theme.css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+
+  <link rel="stylesheet" href="css/normalize.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container header__container">
+      <div class="header__left">
+        <a class="logo header__logo" href="index.html">
+          <img src="images/logo.svg" alt="ATK">
+        </a>
+        <nav class="nav header__nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="#result">Результаты инвесторов</a>
+            </li>
+            <!-- /.nav__item -->
+            <li class="nav__item">
+              <a class="nav__link" href="#how-works">Как работает биржевой советник</a>
+            </li>
+            <!-- /.nav__item -->
+            <li class="nav__item">
+              <a class="nav__link" href="#plans">Тарифы</a>
+            </li>
+            <!-- /.nav__item -->
+            <li class="nav__item">
+              <a class="nav__link" href="#profit">Расчет доходности</a>
+            </li>
+            <!-- /.nav__item -->
+          </ul>
+          <!-- /.nav__list -->
+        </nav>
+        <!-- /.nav header__nav -->
+      </div>
+      <!-- /.header__left -->
+      <div class="header__right">
+        <ul class="social header__social">
+          <li class="social__item">Помощь:</li>
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <img src="images/facebook.svg" alt="Facebook">
+            </a>
+          </li>
+          <!-- /.social__item -->
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <img src="images/vk.svg" alt="Vk">
+            </a>
+          </li>
+          <!-- /.social__item -->
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <img src="images/whatsapp.svg" alt="WhatsApp">
+            </a>
+          </li>
+          <!-- /.social__item -->
+        </ul>
+        <!-- /.social -->
+        <ul class="language header__language" data-selected-lang="Ru">
+          <img class="language__arrow" src="images/arrow-down.svg" alt="Выбрать язык">
+          <li class="language__item">Ru
+            <ul class="language__options">
+              <li class="language__item-select" data-value="Ru">Ru</li>
+              <li class="language__item-select" data-value="En">En</li>
+              <li class="language__item-select" data-value="De">De</li>
+            </ul>
+          </li>
+        </ul>
+        <!-- /.language -->
+      </div>
+      <!-- /.header__right -->
+      <div class="header__mobile">
+        <button class="btn-login" type="button">Вход</button>
+        <div class="menu-btn">
+          <span></span>
+        </div>
+        <!-- /.maenu-btn -->
+        <div class="mobile__menu">
+          <div class="mobile__menu-left">
+            <ul class="mobile-nav">
+              <li class="mobile-nav__item">
+                <a class="mobile-nav__link" href="#result">Результаты инвесторов</a>
+              </li>
+              <!-- /.mobile-nav__item -->
+              <li class="mobile-nav__item">
+                <a class="mobile-nav__link" href="#how-works">Как работает АТК</a>
+              </li>
+              <!-- /.mobile-nav__item -->
+              <li class="mobile-nav__item">
+                <a class="mobile-nav__link" href="#plans">Тарифы</a>
+              </li>
+              <!-- /.mobile-nav__item -->
+              <li class="mobile-nav__item">
+                <a class="mobile-nav__link" href="#profit">Расчет доходности</a>
+              </li>
+            </ul>
+            <ul class="social header__social header__social--mobile">
+              <li class="social__item">Помощь:</li>
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <img src="images/facebook.svg" alt="Facebook">
+                </a>
+              </li>
+              <!-- /.social__item -->
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <img src="images/vk.svg" alt="Vk">
+                </a>
+              </li>
+              <!-- /.social__item -->
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <img src="images/whatsapp.svg" alt="WhatsApp">
+                </a>
+              </li>
+              <!-- /.social__item -->
+            </ul>
+            <!-- /.social -->
+          </div>
+          <div class="mobile__menu-right">
+            <ul class="language header__language header__language--mobile" data-selected-lang="Ru">
+              <img class="language__arrow" src="images/arrow-down.svg" alt="Выбрать язык">
+              <li class="language__item">Ru
+                <ul class="language__options">
+                  <li class="language__item-select" data-value="Ru">Ru</li>
+                  <li class="language__item-select" data-value="En">En</li>
+                  <li class="language__item-select" data-value="De">De</li>
+                </ul>
+              </li>
+            </ul>
+            <!-- /.language -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /.container header__container -->
+  </header>
+  <!-- /.header -->
+
+  <main class="main">
+
+    <section class="hero">
+      <div class="container hero__container">
+        <div class="slider hero__slider">
+          <div>
+            <div class="slider__item">
+              <div class="slider__content">
+                <h1 class="hero__title slider__title">Автономный торговый комплекс (АТК).
+                  Гарантированный доход от 10% в месяц
+                </h1>
+                <button class="button hero__button" type="button">Купить АТК</button>
+              </div>
+              <!-- /.slider__content -->
+              <picture class="slider__photo">
+                <source srcset="images/hero-bg1.png" media="(min-width: 576px)">
+                <img src="images/hero-bg2.png" alt="Hero Background">
+              </picture>
+              <!-- /.slider__photo -->
+            </div>
+          </div>
+          <div>
+            <div class="slider__item">
+              <div class="slider__content">
+                <h1 class="hero__title slider__title">Автономный торговый комплекс (АТК).
+                  Гарантированный доход от 10% в месяц
+                </h1>
+                <button class="button hero__button" type="button">Купить АТК</button>
+              </div>
+              <!-- /.slider__content -->
+              <picture class="slider__photo">
+                <source srcset="images/hero-bg1.png" media="(min-width: 576px)">
+                <img src="images/hero-bg2.png" alt="Hero Background">
+              </picture>
+              <!-- /.slider__photo -->
+            </div>
+          </div>
+        </div>
+        <!-- /.slider hero__slider -->
+      </div>
+      <!-- /.container hero__container -->
+    </section>
+    <!-- /.hero -->
+
+    <section class="feature">
+      <img class="feature__bg" src="images/golden-fewer1.png" alt="Golden Fewer">
+      <div class="container  feature__container">
+        <div class="feature__item">
+          <h3 class="feature__heading">
+            3
+          </h3>
+          <p class="feature__text">Стратегии</p>
+        </div>
+        <!-- /.feature__item -->
+        <div class="feature__item">
+          <h3 class="feature__heading">
+            1500
+          </h3>
+          <div class="feature__content">
+            <p class="feature__text">Клиентов</p>
+            <a class="feature__link" href="#">Отзывы</a>
+          </div>
+        </div>
+        <!-- /.feature__item -->
+        <div class="feature__item">
+          <h3 class="feature__heading">
+            4500
+          </h3>
+          <p class="feature__text">Активных счетов</p>
+        </div>
+        <!-- /.feature__item -->
+        <div class="feature__item">
+          <h3 class="feature__heading">
+            ~ 30%
+          </h3>
+          <p class="feature__text">Доход в месяц</p>
+        </div>
+        <!-- /.feature__item -->
+        <div class="feature__item">
+          <h3 class="feature__heading">
+            $1 000 000+
+          </h3>
+          <p class="feature__text">Суммарная доходность в месяц</p>
+        </div>
+        <!-- /.feature__item -->
+        <div class="feature__item feature__item--details">
+          <div class="feature__photo">
+            <img src="images/pile-of-gold.png" alt="Pile of gold">
+          </div>
+          <!-- /.feature__photo -->
+          <div class="feature__desc">
+            <p class="feature__text feature__text--sm">Узнать о расчете доходности за год</p>
+            <a class="feature__link feature__link--accent" href="">
+              <img src="images/arrow-right.svg" alt="Arrow right">
+              Подробнее
+            </a>
+          </div>
+          <!-- /.feature__desc -->
+        </div>
+      </div>
+      <!-- /.container feature__container -->
+    </section>
+    <!-- /.feature -->
+
+    <section class="result" id="result">
+      <div class="container result__container">
+        <h2 class="result__title">Результаты инвесторов и результаты работы</h2>
+        <div class="result__wrap">
+          <div class="result__col result__col--1">
+            <div class="result__item result__item--1">
+              <div class="result__inner">
+                <div class="result__photo">
+                  <div class="result__zoom">
+                    <img src="images/plus.svg" alt="Увеличить">
+                    Увеличить
+                  </div>
+                  <a data-fancybox="gallery" href="images/result1.png">
+                    <img class="result__slider-img" src="images/result1.png" alt="Result" />
+                  </a>
+                  <div class="result__mask"></div>
+                </div>
+              </div>
+            </div>
+            <!-- /.result__item -->
+            <div class="result__item result__item--2">
+              <div class="result__inner">
+                <div class="result__photo">
+                  <div class="result__zoom">
+                    <img src="images/plus.svg" alt="Увеличить">
+                    Увеличить
+                  </div>
+                  <a data-fancybox="gallery" href="images/result1.png">
+                    <img class="result__slider-img" src="images/result1.png" alt="Result" />
+                  </a>
+                  <div class="result__mask"></div>
+                </div>
+              </div>
+            </div>
+            <!-- /.result__item -->
+          </div>
+          <div class="result__col result__col--2">
+            <div class="result__item result__item--3">
+              <div class="result__inner">
+                <div class="result__photo">
+                  <div class="result__zoom">
+                    <img src="images/plus.svg" alt="Увеличить">
+                    Увеличить
+                  </div>
+                  <a data-fancybox="gallery" href="images/result1.png">
+                    <img class="result__slider-img" src="images/result1.png" alt="Result" />
+                  </a>
+                  <div class="result__mask"></div>
+                </div>
+              </div>
+            </div>
+            <!-- /.result__item -->
+            <div class="result__item result__item--4">
+              <div class="result__inner">
+                <div class="result__photo">
+                  <div class="result__zoom">
+                    <img src="images/plus.svg" alt="Увеличить">
+                    Увеличить
+                  </div>
+                  <a data-fancybox="gallery" href="images/result1.png">
+                    <img class="result__slider-img" src="images/result1.png" alt="Result" />
+                  </a>
+                  <div class="result__mask"></div>
+                </div>
+              </div>
+            </div>
+            <!-- /.result__item -->
+          </div>
+          <div class="result__col result__col--3">
+            <div class="result__item result__item--5">
+              <div class="result__inner">
+                <div class="result__photo">
+                  <div class="result__zoom">
+                    <img src="images/plus.svg" alt="Увеличить">
+                    Увеличить
+                  </div>
+                  <a data-fancybox="gallery" href="images/result1.png">
+                    <img class="result__slider-img" src="images/result1.png" alt="Result" />
+                  </a>
+                  <div class="result__mask"></div>
+                </div>
+              </div>
+            </div>
+            <!-- /.result__item -->
+            <div class="result__item result__item--6">
+              <div class="result__inner">
+                <div class="result__photo">
+                  <div class="result__zoom">
+                    <img src="images/plus.svg" alt="Увеличить">
+                    Увеличить
+                  </div>
+                  <a data-fancybox="gallery" href="images/result1.png">
+                    <img class="result__slider-img" src="images/result1.png" alt="Result" />
+                  </a>
+                  <div class="result__mask"></div>
+                </div>
+              </div>
+            </div>
+            <!-- /.result__item -->
+          </div>
+          <div class="result__col result__col--4">
+            <div class="result__item result__item--7">
+              <div class="result__inner">
+                <div class="result__photo">
+                  <div class="result__zoom">
+                    <img src="images/plus.svg" alt="Увеличить">
+                    Увеличить
+                  </div>
+                  <a data-fancybox="gallery" href="images/result1.png">
+                    <img class="result__slider-img" src="images/result1.png" alt="Result" />
+                  </a>
+                  <div class="result__mask"></div>
+                </div>
+              </div>
+            </div>
+            <!-- /.result__item -->
+            <div class="result__item result__item--8">
+              <div class="result__inner">
+                <div class="result__photo">
+                  <div class="result__zoom">
+                    <img src="images/plus.svg" alt="Увеличить">
+                    Увеличить
+                  </div>
+                  <a data-fancybox="gallery" href="images/result1.png">
+                    <img class="result__slider-img" src="images/result1.png" alt="Result" />
+                  </a>
+                  <div class="result__mask"></div>
+                </div>
+              </div>
+            </div>
+            <!-- /.result__item -->
+          </div>
+          <div class="result__col result__col--5">
+            <div class="result__item result__item--9">
+              <div class="result__inner">
+                <div class="result__photo">
+                  <div class="result__zoom">
+                    <img src="images/plus.svg" alt="Увеличить">
+                    Увеличить
+                  </div>
+                  <a data-fancybox="gallery" href="images/result1.png">
+                    <img class="result__slider-img" src="images/result1.png" alt="Result" />
+                  </a>
+                  <div class="result__mask"></div>
+                </div>
+              </div>
+            </div>
+            <!-- /.result__item -->
+            <div class="result__item result__item--10">
+              <img class="result__icon" src="images/video-review.svg" alt="Видео отзывы">
+              <p class="result__text">Результаты наших клиентов</p>
+              <a class="result__link" href="#">
+                <img src="images/youtube-button.svg" alt="Youtube Button">
+                Смотреть видео
+              </a>
+            </div>
+            <!-- /.result__item -->
+          </div>
+        </div>
+        <!-- /.result__wrap -->
+        <div class="result__slider">
+          <div>
+            <div class="result__slider-item">
+              <div class="result__slider-inner">
+                <div class="result__slider-photo">
+                  <div class="result__zoom">
+                    <img src="images/plus.svg" alt="Увеличить">
+                    Увеличить
+                  </div>
+                  <a data-fancybox="gallery" href="images/result1.png">
+                    <img class="result__slider-img" src="images/result1.png" alt="Result" />
+                  </a>
+                  <div class="result__mask"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="result__slider-item">
+              <div class="result__slider-inner">
+                <div class="result__slider-photo">
+                  <div class="result__zoom">
+                    <img src="images/plus.svg" alt="Увеличить">
+                    Увеличить
+                  </div>
+                  <a data-fancybox="gallery" href="images/result1.png">
+                    <img class="result__slider-img" src="images/result1.png" alt="Result" />
+                  </a>
+                  <!-- <img class="result__slider-img" src="images/result1.png" alt="Result"> -->
+                  <div class="result__mask"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="result__slider-item">
+              <div class="result__slider-inner">
+                <div class="result__slider-photo">
+                  <div class="result__zoom">
+                    <img src="images/plus.svg" alt="Увеличить">
+                    Увеличить
+                  </div>
+                  <a data-fancybox="gallery" href="images/result1.png">
+                    <img class="result__slider-img" src="images/result1.png" alt="Result" />
+                  </a>
+                  <!-- <img class="result__slider-img" src="images/result1.png" alt="Result"> -->
+                  <div class="result__mask"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="result__slider-item">
+              <div class="result__slider-inner">
+                <div class="result__slider-photo">
+                  <div class="result__zoom">
+                    <img src="images/plus.svg" alt="Увеличить">
+                    Увеличить
+                  </div>
+                  <a data-fancybox="gallery" href="images/result1.png">
+                    <img class="result__slider-img" src="images/result1.png" alt="Result" />
+                  </a>
+                  <!-- <img class="result__slider-img" src="images/result1.png" alt="Result"> -->
+                  <div class="result__mask"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="result__slider-item">
+              <div class="result__slider-inner">
+                <div class="result__slider-photo">
+                  <div class="result__zoom">
+                    <img src="images/plus.svg" alt="Увеличить">
+                    Увеличить
+                  </div>
+                  <a data-fancybox="gallery" href="images/result1.png">
+                    <img class="result__slider-img" src="images/result1.png" alt="Result" />
+                  </a>
+                  <!-- <img class="result__slider-img" src="images/result1.png" alt="Result"> -->
+                  <div class="result__mask"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="result__slider-item">
+              <div class="result__slider-inner">
+                <div class="result__slider-photo">
+                  <div class="result__zoom">
+                    <img src="images/plus.svg" alt="Увеличить">
+                    Увеличить
+                  </div>
+                  <a data-fancybox="gallery" href="images/result1.png">
+                    <img class="result__slider-img" src="images/result1.png" alt="Result" />
+                  </a>
+                  <!-- <img class="result__slider-img" src="images/result1.png" alt="Result"> -->
+                  <div class="result__mask"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="result__slider-item">
+              <div class="result__slider-inner">
+                <div class="result__slider-photo">
+                  <div class="result__zoom">
+                    <img src="images/plus.svg" alt="Увеличить">
+                    Увеличить
+                  </div>
+                  <a data-fancybox="gallery" href="images/result1.png">
+                    <img class="result__slider-img" src="images/result1.png" alt="Result" />
+                  </a>
+                  <!-- <img class="result__slider-img" src="images/result1.png" alt="Result"> -->
+                  <div class="result__mask"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="result__slider-item">
+              <div class="result__slider-inner">
+                <div class="result__slider-photo">
+                  <div class="result__zoom">
+                    <img src="images/plus.svg" alt="Увеличить">
+                    Увеличить
+                  </div>
+                  <a data-fancybox="gallery" href="images/result1.png">
+                    <img class="result__slider-img" src="images/result1.png" alt="Result" />
+                  </a>
+                  <!-- <img class="result__slider-img" src="images/result1.png" alt="Result"> -->
+                  <div class="result__mask"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="result__slider-item">
+              <div class="result__slider-inner">
+                <div class="result__slider-photo">
+                  <div class="result__zoom">
+                    <img src="images/plus.svg" alt="Увеличить">
+                    Увеличить
+                  </div>
+                  <a data-fancybox="gallery" href="images/result1.png">
+                    <img class="result__slider-img" src="images/result1.png" alt="Result" />
+                  </a>
+                  <!-- <img class="result__slider-img" src="images/result1.png" alt="Result"> -->
+                  <div class="result__mask"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="result__slider-item">
+              <img class="result__icon" src="images/video-review.svg" alt="Видео отзывы">
+              <p class="result__text">Результаты наших клиентов</p>
+              <a class="result__link" href="#">
+                <img src="images/youtube-button.svg" alt="Youtube Button">
+                Смотреть видео
+              </a>
+            </div>
+          </div>
+          <div>
+            <div class="result__slider-item">
+              <div class="result__slider-inner">
+                <div class="result__slider-photo">
+                  <div class="result__zoom">
+                    <img src="images/plus.svg" alt="Увеличить">
+                    Увеличить
+                  </div>
+                  <a data-fancybox="gallery" href="images/result1.png">
+                    <img class="result__slider-img" src="images/result1.png" alt="Result" />
+                  </a>
+                  <!-- <img class="result__slider-img" src="images/result1.png" alt="Result"> -->
+                  <div class="result__mask"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.container result__container -->
+    </section>
+    <!-- /#result.result -->
+
+    <section class="how-works" id="how-works">
+      <img class="how-works__bg" src="images/golden-fewer2.png" alt="Golden Fewer 2">
+      <div class="container how-works__container">
+        <h2 class="how-works__title">Как работает автономный торговый комплекс</h2>
+        <!-- /.how-works__title -->
+        <div class="how-works__content">
+          <div class="how-works__inner">
+            <div class="how-works__item">
+              <img class="how-works__img" src="images/deposit.svg" alt="Deposit">
+              <h3 class="how-works__heading">Депозит</h3>
+              <p class="how-works__text">Вы приобретаете робота и пополняете счёт брокера. В любой момент выводите свои
+                средства + заработанные %. За автономность вы платите комиссию 10-12% с заработанных средств по итогу
+                месяца.</p>
+            </div>
+            <!-- /.how-works__item -->
+            <div class="how-works__item">
+              <img class="how-works__img" src="images/authonomity.svg" alt="Authonomity">
+              <h3 class="how-works__heading">Автономность</h3>
+              <p class="how-works__text">Данный продукт работает полностью автономно. Наша техническая поддержка поможет
+                Вам быстро и качественно настроить АТК для торговли на валютном рынке. Ваша задача в пассивном режиме
+                следить за процессом и ростом дохода.</p>
+            </div>
+            <!-- /.how-works__item -->
+            <div class="how-works__item">
+              <img class="how-works__img" src="images/money-owner.svg" alt="Money Owner">
+              <h3 class="how-works__heading">Управление</h3>
+              <p class="how-works__text">В любой момент времени вы можете:
+                <ul>
+                  <li>остановить свой АТК,</li>
+                  <li>увеличить депозит,</li>
+                  <li>осуществить вывод как прибыли, так и всего депозита вцелом,</li>
+                  <li>продолжить дальнейшую торговлю.</li>
+                </ul>
+              </p>
+            </div>
+            <!-- /.how-works__item -->
+            <div class="how-works__item">
+              <img class="how-works__img" src="images/deal.svg" alt="Deal">
+              <h3 class="how-works__heading">Пожизненное владение и поддержка</h3>
+              <p class="how-works__text">Вы приобретаете наше программное обеспечение. А мы осуществляем вашу
+                техническую поддержку круглый год 24/7.</p>
+            </div>
+            <!-- /.how-works__item -->
+          </div>
+          <!-- /.how-works__inner -->
+          <div class="how-works__action">
+            <div class="how-works__action-img">
+              <img src="images/chest-of-gold.png" alt="Chest of gold">
+            </div>
+            <div class="how-works__action-desc">
+              <h3 class="how-works__action-heading">Гарантии</h3>
+              <p class="how-works__action-text">Полная страховка вашего биржевого счета за счёт средств нашей компании.
+              </p>
+            </div>
+            <button class="button button--sm how-works__action-btn">Консультация</button>
+          </div>
+          <!-- /.how-works__action -->
+        </div>
+        <!-- /.how-works__content -->
+      </div>
+      <!-- /.container how-works__container -->
+    </section>
+    <!-- /#how-works.how-works -->
+
+    <section class="plans" id="plans">
+      <div class="container plans__container">
+        <h2 class="plans__title">Выберите пакет с гарантированным доходом</h2>
+        <div class="plans__wrap">
+          <div class="plans__item">
+            <div class="plans__item-top">
+              <img class="plans__item-img plans__item-img--basic" src="images/tariff-basic.png" alt="Basic">
+              <h3 class="plans__item-title">Пакет минимальный</h3>
+              <p class="plans__item-desc plans__item-desc--sm">Гарантированный доход от 8-12%</p>
+            </div>
+            <!-- /.plans__item-top -->
+            <div class="plans__item-middle">
+              <ul class="plans__item-list">
+                <li class="plans__item-unit">
+                  <img class="plans__item-icon" src="images/arrow-right.svg" alt="Arrow right">
+                  Полный функционал
+                </li>
+                <!-- /.plans__item-unit -->
+                <li class="plans__item-unit">
+                  <img class="plans__item-icon" src="images/arrow-right.svg" alt="Arrow right">
+                  Безлимитное использование
+                </li>
+                <!-- /.plans__item-unit -->
+                <li class="plans__item-unit">
+                  <img class="plans__item-icon" src="images/arrow-right.svg" alt="Arrow right">
+                  Баланс до 5 000 $
+                </li>
+                <!-- /.plans__item-unit -->
+                <li class="plans__item-unit disabled">
+                  <img class="plans__item-icon" src="images/arrow-right.svg" alt="Arrow right">
+                  Чат поддержки
+                </li>
+                <!-- /.plans__item-unit -->
+                <li class="plans__item-unit disabled">
+                  <img class="plans__item-icon" src="images/arrow-right.svg" alt="Arrow right">
+                  Обучающая школа
+                </li>
+                <!-- /.plans__item-unit -->
+                <li class="plans__item-unit disabled">
+                  <img class="plans__item-icon" src="images/arrow-right.svg" alt="Arrow right">
+                  Контроль счёта разработчиком
+                </li>
+                <!-- /.plans__item-unit -->
+              </ul>
+              <!-- /.plans__item-list -->
+            </div>
+            <!-- /.plans__item-middle -->
+            <div class="plans__item-bottom">
+              <span class="plans__item-price">599$</span>
+              <button class="button plans__item-btn" type="button">Оформить заказ</button>
+            </div>
+            <!-- /.plans__item-bottom -->
+          </div>
+          <!-- /.plans__item -->
+          <div class="plans__item">
+            <img class="star" src="images/popular-star.svg" alt="Популярно">
+            <div class="plans__item-top">
+              <img class="plans__item-img plans__item-img--gold" src="images/tariff-gold.png" alt="Gold">
+              <h3 class="plans__item-title">Пакет оптимальный</h3>
+              <p class="plans__item-desc plans__item-desc--sm">Гарантированный доход 15-25%</p>
+            </div>
+            <!-- /.plans__item-top -->
+            <div class="plans__item-middle">
+              <ul class="plans__item-list">
+                <li class="plans__item-unit">
+                  <img class="plans__item-icon" src="images/arrow-right.svg" alt="Arrow right">
+                  Полный функционал
+                </li>
+                <!-- /.plans__item-unit -->
+                <li class="plans__item-unit">
+                  <img class="plans__item-icon" src="images/arrow-right.svg" alt="Arrow right">
+                  Безлимитное использование
+                </li>
+                <!-- /.plans__item-unit -->
+                <li class="plans__item-unit">
+                  <img class="plans__item-icon" src="images/arrow-right.svg" alt="Arrow right">
+                  Баланс до 10 000 $
+                </li>
+                <!-- /.plans__item-unit -->
+                <li class="plans__item-unit">
+                  <img class="plans__item-icon" src="images/arrow-right.svg" alt="Arrow right">
+                  Чат поддержки
+                </li>
+                <!-- /.plans__item-unit -->
+                <li class="plans__item-unit">
+                  <img class="plans__item-icon" src="images/arrow-right.svg" alt="Arrow right">
+                  Обучающая школа
+                </li>
+                <!-- /.plans__item-unit -->
+                <li class="plans__item-unit disabled">
+                  <img class="plans__item-icon" src="images/arrow-right.svg" alt="Arrow right">
+                  Контроль счёта разработчиком
+                </li>
+                <!-- /.plans__item-unit -->
+              </ul>
+              <!-- /.plans__item-list -->
+            </div>
+            <!-- /.plans__item-middle -->
+            <div class="plans__item-bottom">
+              <span class="plans__item-price">999$</span>
+              <button class="button plans__item-btn" type="button">Оформить заказ</button>
+            </div>
+            <!-- /.plans__item-bottom -->
+          </div>
+          <!-- /.plans__item -->
+          <div class="plans__item">
+            <div class="plans__item-top">
+              <img class="plans__item-img plans__item-img--premium" src="images/tariff-premium.png" alt="Premium">
+              <h3 class="plans__item-title">Пакет максимальный</h3>
+              <p class="plans__item-desc">Приносит гарантированный доход от 30%</p>
+            </div>
+            <!-- /.plans__item-top -->
+            <div class="plans__item-middle">
+              <ul class="plans__item-list">
+                <li class="plans__item-unit">
+                  <img class="plans__item-icon" src="images/arrow-right.svg" alt="Arrow right">
+                  Полный функционал
+                </li>
+                <!-- /.plans__item-unit -->
+                <li class="plans__item-unit">
+                  <img class="plans__item-icon" src="images/arrow-right.svg" alt="Arrow right">
+                  Безлимитное использование
+                </li>
+                <!-- /.plans__item-unit -->
+                <li class="plans__item-unit">
+                  <img class="plans__item-icon" src="images/arrow-right.svg" alt="Arrow right">
+                  Безлимитный баланс
+                </li>
+                <!-- /.plans__item-unit -->
+                <li class="plans__item-unit">
+                  <img class="plans__item-icon" src="images/arrow-right.svg" alt="Arrow right">
+                  Чат поддержки
+                </li>
+                <!-- /.plans__item-unit -->
+                <li class="plans__item-unit">
+                  <img class="plans__item-icon" src="images/arrow-right.svg" alt="Arrow right">
+                  Обучающая школа
+                </li>
+                <!-- /.plans__item-unit -->
+                <li class="plans__item-unit">
+                  <img class="plans__item-icon" src="images/arrow-right.svg" alt="Arrow right">
+                  Контроль счёта разработчиком
+                </li>
+                <!-- /.plans__item-unit -->
+              </ul>
+              <!-- /.plans__item-list -->
+            </div>
+            <!-- /.plans__item-middle -->
+            <div class="plans__item-bottom">
+              <span class="plans__item-price">1999$</span>
+              <button class="button plans__item-btn" type="button">Оформить заказ</button>
+            </div>
+            <!-- /.plans__item-bottom -->
+          </div>
+          <!-- /.plans__item -->
+        </div>
+      </div>
+      <!-- /.container plans__container -->
+    </section>
+    <!-- /#plans.plans -->
+
+    <section class="faq">
+      <div class="container faq__container">
+        <div class="faq__item">
+          <img class="faq__img" src="images/key.svg" alt="Key">
+          <div class="faq__content">
+            <h3 class="faq__title faq__title--sm">Где хранятся мои деньги, и как их можно вывести?</h3>
+            <p class="faq__text">Депозит хранится на счету брокера, где вы регистрируетесь и создаёте личный кабинет.
+              Доступ к личному кабинету, операциям ввода и вывода есть только у вас и надёжно защищён системами
+              безопасности брокера. Пополнить депозит и вывести средства вы можете в любой момент.</p>
+            <div class="faq__action">
+              <p class="faq__subtitle faq__subtitle--sm">Узнать о нашей защите вы можете посмотрев видео</p>
+              <a class="faq__link" href="#">
+                <img src="images/youtube-button.svg" alt="Youtube Button">
+                Смотреть видео
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- /.faq__item -->
+        <div class="faq__item">
+          <img class="faq__img" src="images/calc.svg" alt="Calc">
+          <div class="faq__content">
+            <h3 class="faq__title">Когда был создан Автономный торговый комплекс (АТК)</h3>
+            <p class="faq__text">Автономный торговый комплекс (АТК) был создан в конце 2019 года, после чего очень
+              успешно развивается и продвигается. Несмотря на небольшой срок работы АТК, мы имеем большое количество
+              положительных <a href="#">отзывов</a>, и пока ещё никто не был им недоволен!</p>
+            <div class="faq__action">
+              <p class="faq__subtitle">АТК занимается наша команда аналитиков и программистов, которые ежедневно
+                работают над улучшением.</p>
+            </div>
+          </div>
+        </div>
+        <!-- /.faq__item -->
+      </div>
+      <!-- /.container faq__container -->
+    </section>
+    <!-- /.faq -->
+
+    <section class="profit" id="profit">
+      <img class="profit__bg" src="images/golden-fewer3.png" alt="Golden Fewer 3">
+      <div class="container profit__container">
+        <div class="profit__content">
+          <h2 class="profit__title">Расчет доходности за год</h2>
+          <p class="profit__text">Все цифры приблизительные и рассчитаны с учетом реинвестирования прибыли. В режиме
+            онлайн вы можете следить за работой нашей программы, которую курируют наши программисты и трейдеры.</p>
+          <h3 class="profit__subtitle">Минимальный депозит — $500</h3>
+        </div>
+        <!-- /.profit__content -->
+        <div class="profit__plans">
+          <div class="profit__item">
+            <img class="profit__img" src="images/tariff-basic.png" alt="Basic">
+            <div class="profit__info">
+              <h3 class="profit__item-title">Пакет минимальный</h3>
+              <div class="profit__range">
+                <span>
+                  <img src="images/range.svg" alt="range">
+                </span>
+              </div>
+              <div class="profit__desc">
+                <span>$1565</span>
+                <p class="profit__item-text">Ваш приблизительный чистый доход по итогу года при консервативной биржевой
+                  торговле.</p>
+              </div>
+            </div>
+          </div>
+          <!-- /.profit__item -->
+          <div class="profit__item">
+            <img class="profit__img" src="images/tariff-gold.png" alt="Gold">
+            <div class="profit__info">
+              <h3 class="profit__item-title">Пакет отпимальный</h3>
+              <div class="profit__range profit__range--md">
+                <span>
+                  <img src="images/range.svg" alt="range">
+                </span>
+              </div>
+              <div class="profit__desc">
+                <span>$7315</span>
+                <p class="profit__item-text">Ваш приблизительный чистый доход по итогу года при консервативной биржевой
+                  торговле.</p>
+              </div>
+            </div>
+          </div>
+          <!-- /.profit__item -->
+          <div class="profit__item">
+            <img class="profit__img" src="images/tariff-premium.png" alt="Premium">
+            <div class="profit__info">
+              <h3 class="profit__item-title">Пакет максимальный</h3>
+              <div class="profit__range profit__range--lg">
+                <span>
+                  <img src="images/range.svg" alt="range">
+                </span>
+              </div>
+              <div class="profit__desc">
+                <span>$17834</span>
+                <p class="profit__item-text">Ваш приблизительный чистый доход по итогу года при консервативной биржевой
+                  торговле.</p>
+              </div>
+            </div>
+          </div>
+          <!-- /.profit__item -->
+        </div>
+        <!-- /.profit__plans -->
+      </div>
+      <!-- /.container profit__container -->
+    </section>
+    <!-- /#profit.profit -->
+
+    <section class="partner">
+      <div class="container partner__container">
+        <div class="partner__content">
+          <h2 class="partner__title">Партнёрская программа</h2>
+          <p class="partner__text">К партнёрской программе может присоединиться любой участник нашего проекта. Особое
+            отличие нашей программы в том, что вы зарабатываете не только на том, что привели партнера, но и получаете
+            2% от заработанных партнером денег.</p>
+          <picture class="partner__photo">
+            <source srcset="images/partner1.png" media="(min-width: 576px)">
+            <img src="images/partner2.png" alt="Partner programm 2">
+          </picture>
+        </div>
+        <div class="partner__warrancy">
+          <img class="star" src="images/warrancy-star.svg" alt="Важно">
+          <h2 class="partner__title">Гарантийное соглашение</h2>
+          <p class="partner__text">В случае выхода из строя программного обеспечения и соблюдения всех требования от
+            технической поддержки, страховка от нашей компании возместит весь утерянный депозит на вашем счёте. Алгоритм
+            программы долгие годы работает без каких либо проблем.</p>
+          <ul class="partner__list">
+            Страховка действует если:
+            <li class="partner__item">
+              <img src="images/user.svg" alt="User">
+              Пользователь не вмешивался в работу робота, самостоятельно не останавливал и не закрывал сделки.
+            </li>
+            <!-- /.partner__item -->
+            <li class="partner__item">
+              <img src="images/mechanism.svg" alt="Mechanism">
+              В случае запроса от технической поддержки пользователь не препятствовал перенастройке или обновлению
+              программного обеспечения.
+            </li>
+            <!-- /.partner__item -->
+            <li class="partner__item">
+              <img src="images/timer.svg" alt="Timer">
+              Своевременно проводил обновление программы.
+            </li>
+            <!-- /.partner__item -->
+          </ul>
+          <!-- /.partner__list -->
+          <strong>Страховка действует 2 месяца с момента приобретения программы.
+            Ориентировочная окупаемость данного продукта 15 дней.</strong>
+        </div>
+      </div>
+      <!-- /.container partner__container -->
+    </section>
+    <!-- /.partner -->
+
+    <section class="feedback">
+      <div class="container feedback__container">
+        <h1 class="feedback__title">Бесплатная консультация
+          по продуктам компании</h1>
+        <p class="feedback__text">Оставьте заявку, мы перезвоним в ближайшее время и ответим на все ваши вопросы.</p>
+        <form class="form feedback__form" action="#" method="POST">
+          <label class="form__label" for="name">
+            <input class="form__input" type="text" placeholder="Ваше имя" required>
+          </label>
+          <label class="form__label" for="phone">
+            <input class="form__input" type="text" placeholder="Телефон" required>
+          </label>
+          <button class="button button--lg form__btn feedback__btn" type="button">Оставить заявку</button>
+        </form>
+      </div>
+      <!-- /.container feedback__container -->
+    </section>
+    <!-- /.feedback -->
+
+  </main>
+  <!-- /.main -->
+
+
+  <footer class="footer">
+    <div class="container footer__container">
+      <div class="footer__top">
+        <div class="footer__contacts">
+          <div class="footer__location">
+            <h3 class="footer__title">Адрес офиса компании</h3>
+            <p class="footer__attention">Украина, г. Киев,
+              пр-т Правды, 41-В</p>
+            <a class="footer__map-link" href="#" target="_blank">На карте</a>
+          </div>
+          <div class="footer__callback">
+            <h3 class="footer__title">Телефон</h3>
+            <a class="footer__attention footer__callback-link" href="tel:+380682438466">+38 (068) 243-84-66</a>
+          </div>
+        </div>
+        <div class="footer__action">
+          <ul class="social footer__social">
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <img src="images/facebook.svg" alt="Facebook">
+              </a>
+            </li>
+            <!-- /.social__item -->
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <img src="images/vk.svg" alt="Vk">
+              </a>
+            </li>
+            <!-- /.social__item -->
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <img src="images/whatsapp.svg" alt="WhatsApp">
+              </a>
+            </li>
+            <!-- /.social__item -->
+          </ul>
+          <!-- /.social -->
+          <ul class="language footer__language" data-selected-lang="Ru">
+            <img class="language__arrow" src="images/arrow-down.svg" alt="Выбрать язык">
+            <li class="language__item">Ru
+              <ul class="language__options">
+                <li class="language__item-select" data-value="Ru">Ru</li>
+                <li class="language__item-select" data-value="En">En</li>
+                <li class="language__item-select" data-value="De">De</li>
+              </ul>
+            </li>
+          </ul>
+          <!-- /.language -->
+        </div>
+      </div>
+      <!-- /.footer__top -->
+      <div class="footer__bottom">
+        <div class="footer__nav">
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="footer__link  logo footer__logo" href="index.html">
+                <img src="images/logo.svg" alt="ATK">
+              </a>
+            </li>
+            <!-- /.footer__item -->
+            <li class="footer__item">
+              <a class="footer__link" href="#">Все права защищены</a>
+            </li>
+            <!-- /.footer__item -->
+            <li class="footer__item">
+              <a class="footer__link" href="#">Политика конфиденциальности</a>
+            </li>
+            <!-- /.footer__item -->
+            <li class="footer__item">
+              <a class="footer__link" href="#">Условия договора оферты</a>
+            </li>
+            <!-- /.footer__item -->
+          </ul>
+          <!-- /.footer__list -->
+        </div>
+        <!-- /.footer__nav -->
+        <div class="footer__copy">ATK</div>
+      </div>
+      <!-- /.footer__bottom -->
+      <div class="footer__mobile">
+        <div class="footer__mobile-top">
+          <a class="logo footer__logo-mobile" href="index.html">
+            <img src="images/logo.svg" alt="ATK">
+          </a>
+          <div class="footer__mobile-action">
+            <ul class="social footer__social footer__mobile-social">
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <img src="images/facebook.svg" alt="Facebook">
+                </a>
+              </li>
+              <!-- /.social__item -->
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <img src="images/vk.svg" alt="Vk">
+                </a>
+              </li>
+              <!-- /.social__item -->
+              <li class="social__item">
+                <a class="social__link" href="#">
+                  <img src="images/whatsapp.svg" alt="WhatsApp">
+                </a>
+              </li>
+              <!-- /.social__item -->
+            </ul>
+            <!-- /.social -->
+            <ul class="language footer__language footer__mobile-language" data-selected-lang="Ru">
+              <img class="language__arrow" src="images/arrow-down.svg" alt="Выбрать язык">
+              <li class="language__item">Ru
+                <ul class="language__options">
+                  <li class="language__item-select" data-value="Ru">Ru</li>
+                  <li class="language__item-select" data-value="En">En</li>
+                  <li class="language__item-select" data-value="De">De</li>
+                </ul>
+              </li>
+            </ul>
+            <!-- /.language -->
+          </div>
+        </div>
+        <!-- /.footer__mobile-top -->
+        <div class="footer__mobile-bottom">
+          <div class="footer__contacts footer__mobile-contacts">
+            <div class="footer__callback footer__mobile-callback">
+              <h3 class="footer__title">Телефон</h3>
+              <a class="footer__attention footer__callback-link footer__mobile-attention" href="tel:+380682438466">+38
+                (068) 243-84-66</a>
+            </div>
+            <div class="footer__location footer__mobile-location">
+              <h3 class="footer__title">Адрес офиса компании</h3>
+              <p class="footer__attention footer__mobile-attention">Украина, г. Киев,
+                пр-т Правды, 41-В</p>
+              <a class="footer__map-link" href="#" target="_blank">На карте</a>
+            </div>
+          </div>
+          <div class="footer__nav footer__mobile-nav">
+            <ul class="footer__list footer__mobile-list">
+              <li class="footer__item">
+                <a class="footer__link" href="#">Все права защищены</a>
+              </li>
+              <!-- /.footer__item -->
+              <li class="footer__item">
+                <a class="footer__link" href="#">Политика конфиденциальности</a>
+              </li>
+              <!-- /.footer__item -->
+              <li class="footer__item">
+                <a class="footer__link" href="#">Условия договора оферты</a>
+              </li>
+              <!-- /.footer__item -->
+            </ul>
+            <!-- /.footer__list -->
+            <div class="footer__copy footer__mobile-copy">ATK</div>
+          </div>
+          <!-- /.footer__nav.footer__mobile-nav-->
+        </div>
+        <!-- /.footer__mobile-bottom -->
+      </div>
+      <!-- /.footer__mobile -->
+    </div>
+    <!-- /.container footer__container -->
+  </footer>
+  <!-- /.footer -->
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

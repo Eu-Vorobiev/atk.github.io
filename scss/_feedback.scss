@@ -1,0 +1,105 @@
+.feedback {
+  margin-bottom: 120px;
+
+  @media (max-width: 768px) {
+    margin-bottom: 90px;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 90px;
+
+    @media (max-width: 1024px) {
+      align-items: center;
+      text-align: center;
+    }
+
+    @media (max-width: 768px) {
+      padding-top: 60px;
+    }
+
+    @media (max-width: 475px) {
+      padding-top: 30px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 20px;
+    max-width: 700px;
+
+    @media (max-width: 1150px) {
+      max-width: 450px;
+    }
+
+    @media (max-width: 760px) {
+      font-size: 32px;
+    }
+
+    @media (max-width: 475px) {
+      font-size: 20px;
+      line-height: 22px;
+      margin-bottom: 15px;
+      max-width: 350px;
+    }
+  }
+
+  &__text {
+    margin-bottom: 30px;
+    max-width: 410px;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 29px;
+    color: $white;
+
+    @media (max-width: 1024px) {
+      max-width: 650px;
+    }
+
+    @media (max-width: 475px) {
+      font-size: 15px;
+      line-height: 22px;
+      max-width: 350px;
+    }
+  }
+
+  &__btn {
+    position: relative;
+
+    @media (max-width: 1150px) {
+      padding: 20px 85px;
+    }
+
+    @media (max-width: 1024px) {
+      margin-top: 20px;
+    }
+
+    @media (max-width: 575px) {
+      margin-top: 25px;
+      padding: 17px 85px;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      background-image: url("../images/gold-mines.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      bottom: -45px;
+      right: -30px;
+      width: 125px;
+      height: 90px;
+
+      @media (max-width: 575px) {
+        width: 90px;
+        height: 65px;
+        right: -20px;
+        bottom: -35px;
+      }
+    }
+
+    &:hover {
+      z-index: 10;
+    }
+  }
+}

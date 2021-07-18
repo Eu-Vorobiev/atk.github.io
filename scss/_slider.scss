@@ -1,0 +1,197 @@
+.slider {
+  display: flex;
+  align-items: center;
+
+  &__item {
+    display: flex;
+
+    @media (max-width: 575px) {
+      flex-direction: column;
+    }
+  }
+
+  &__content {
+    padding-top: 130px;
+    display: flex;
+    flex-direction: column;
+
+    @media (max-width: 1200px) {
+      padding-top: 90px;
+    }
+
+    @media (max-width: 1024px) {
+      padding-top: 30px;
+      margin-right: 70px;
+    }
+
+    @media (max-width: 950px) {
+      margin-right: 20px;
+      padding-top: 30px;
+    }
+
+    @media (max-width: 830px) {
+      margin-right: 0;
+    }
+
+    @media (max-width: 660px) {
+      padding-top: 0;
+    }
+  }
+
+  &__photo {
+    @media (max-width: 1200px) {
+      max-width: 550px;
+    }
+
+    @media (max-width: 1024px) {
+      max-width: 450px;
+    }
+
+    @media (max-width: 900px) {
+      max-width: 400px;
+    }
+
+    @media (max-width: 760px) {
+      max-width: 340px;
+    }
+
+    @media (max-width: 660px) {
+      max-width: 310px;
+    }
+
+    @media (max-width: 610px) {
+      max-width: 270px;
+    }
+
+    @media (max-width: 575px) {
+      max-width: 120px;
+      align-self: flex-end;
+      margin-top: -50px;
+      margin-right: 30px;
+    }
+
+    @media (max-width: 415px) {
+      margin-top: -20px;
+    }
+
+  }
+}
+
+.hero__slider .slick-initialized .slick-slider,
+.result__slider .slick-initialized .slick-slider {
+  display: inline-flex;
+}
+
+.hero__slider .slick-initialized .slick-slide,
+.result__slider .slick-initialized .slick-slide {
+  display: inline-flex;
+}
+
+.result__slider .slick-initialized .slick-slider {
+  width: 900px;
+}
+
+.slick-dotted.slick-slider {
+  width: 1250px;
+  margin-bottom: 90px;
+
+  @media (max-width: 1200px) {
+    width: 1150px;
+    margin-bottom: 70px;
+  }
+
+  @media (max-width: 1100px) {
+    width: 1030px;
+  }
+
+  @media (max-width: 1024px) {
+    width: 930px;
+  }
+
+  @media (max-width: 900px) {
+    width: 800px;
+  }
+
+  @media (max-width: 768px) {
+    width: 750px;
+  }
+
+  @media (max-width: 760px) {
+    width: 700px;
+    margin-bottom: 60px;
+  }
+
+  @media (max-width: 660px) {
+    width: 610px;
+  }
+
+  @media (max-width: 610px) {
+    width: 560px;
+  }
+
+  @media (max-width: 575px) {
+    width: 525px;
+  }
+
+  @media (max-width: 515px) {
+    width: 480px;
+  }
+
+  @media (max-width: 465px) {
+    width: 430px;
+  }
+
+  @media (max-width: 415px) {
+    width: 400px;
+  }
+
+  @media (max-width: 390px) {
+    width: 350px;
+  }
+}
+
+
+.slick-dots {
+  bottom: -80px;
+  left: -50px;
+
+  @media (max-width: 1200px) {
+    bottom: -60px;
+  }
+
+  @media (max-width: 1100px) {
+    left: unset;
+  }
+
+  @media (max-width: 900px) {
+    left: 40px;
+  }
+
+  @media (max-width: 840px) {
+    left: unset;
+  }
+
+  @media (max-width: 575px) {
+    bottom: -20px;
+  }
+}
+
+.slick-dots li {
+  width: 12px;
+  height: 12px;
+  background: #252525;
+  border-radius: 50%;
+}
+
+li.slick-active {
+  background: $yellow;
+}
+
+.slick-dots li button::before {
+  font-size: 0;
+  color: #252525;
+}
+
+.slick-dots li.slick-active button::before {
+  color: $yellow;
+}
