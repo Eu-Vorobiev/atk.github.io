@@ -1,8 +1,15 @@
 .language {
-  padding: 0px 32px;
+  padding: 0px 32px 0px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: relative;
   background: $black;
   border-radius: 10px;
@@ -14,11 +21,15 @@
     }
 
     .language__options {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
     }
 
     .language__arrow {
-      transform: translateY(-50%) rotate(180deg);
+      -webkit-transform: translateY(-50%) rotate(180deg);
+          -ms-transform: translateY(-50%) rotate(180deg);
+              transform: translateY(-50%) rotate(180deg);
     }
   }
 
@@ -27,30 +38,44 @@
     cursor: pointer;
     top: 50%;
     right: 12px;
-    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
 
   }
 
   &__item {
-    user-select: none;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
     font-weight: bold;
     font-size: 16px;
     line-height: 24px;
     color: #ECEDF4;
     position: relative;
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
   }
 
   &__options {
     display: none;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     background: transparent;
     position: absolute;
     top: 0;
     left: 0;
 
     li {
+      -webkit-transition: all .3s ease-in-out;
+      -o-transition: all .3s ease-in-out;
       transition: all .3s ease-in-out;
 
       &:hover {

@@ -68,8 +68,14 @@ button {
 
 .logo {
   &:hover {
-    filter: brightness(130%);
+    -webkit-filter: brightness(130%);
+            filter: brightness(130%);
   }
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
 }
 
 h1 {

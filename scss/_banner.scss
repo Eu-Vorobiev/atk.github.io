@@ -1,0 +1,197 @@
+.banner {
+  border-top: 1px solid rgba(236, 237, 244, 0.3);
+  border-bottom: 1px solid rgba(236, 237, 244, 0.3);
+  border-radius: 2px;
+  margin-bottom: 80px;
+  overflow: hidden;
+
+  @media (max-width: 1024px) {
+    margin-bottom: 50px;
+  }
+
+  @media (max-width: 768px) {
+    margin-bottom: 30px;
+  }
+
+  &__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+
+    @media (max-width: 768px) {
+      padding-top: 50px;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+    }
+
+    @media (max-width: 475px) {
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start;
+    }
+  }
+
+  &__heading {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: 400px;
+
+    @media (max-width: 1024px) {
+      max-width: 305px;
+    }
+
+    @media (max-width: 768px) {
+      max-width: 450px;
+      margin-bottom: 25px;
+      text-align: center;
+    }
+
+    @media (max-width: 475px) {
+      max-width: 330px;
+      text-align: left;
+    }
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 130%;
+    color: $white;
+    margin-bottom: 10px;
+
+    @media (max-width: 1024px) {
+      font-size: 24px;
+    }
+
+    @media (max-width: 768px) {
+      font-size: 30px;
+    }
+
+    @media (max-width: 475px) {
+      font-size: 25px;
+      line-height: 32px;
+    }
+  }
+
+  &__desc {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 22px;
+    color: $accent;
+
+    span {
+      padding: 0px 2px;
+      color: $accent;
+    }
+
+    @media (max-width: 768px) {
+      -ms-flex-item-align: center;
+          -ms-grid-row-align: center;
+          align-self: center;
+    }
+
+    @media (max-width: 475px) {
+      -ms-flex-item-align: start;
+          align-self: flex-start;
+    }
+  }
+
+  &__photo {
+    max-width: 290px;
+    padding-top: 15px;
+    position: relative;
+
+    @media (max-width: 1024px) {
+      max-width: 220px;
+    }
+
+    @media (max-width: 850px) {
+      padding-top: 20px;
+    }
+
+    @media (max-width: 768px) {
+      padding-top: 0;
+      -webkit-box-ordinal-group: 2;
+          -ms-flex-order: 1;
+              order: 1;
+      max-width: 340px;
+      -ms-flex-item-align: end;
+          align-self: flex-end;
+      margin-right: -15px;
+      margin-top: -10px;
+    }
+
+    img {
+      position: relative;
+      z-index: 1;
+      vertical-align: bottom;
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 40px;
+      left: -95px;
+      background: $gradient;
+      opacity: 0.5;
+      -webkit-filter: blur(90px);
+              filter: blur(90px);
+      width: 120%;
+      height: 100%;
+      border-radius: 50%;
+
+      @media (max-width: 1024px) {
+        top: 0px;
+        left: -100px;
+        width: 150%;
+      }
+
+      @media (max-width: 850px) {
+        left: -70px;
+        width: 130%;
+      }
+
+      @media (max-width: 475px) {
+        left: -90px;
+        width: 100%;
+        top: -80px;
+      }
+    }
+  }
+
+  &__btn {
+    position: relative;
+    z-index: 10;
+
+    @media (max-width: 850px) {
+      padding: 12px 34px;
+    }
+
+    @media (max-width: 475px) {
+      padding: 12px 37px;
+      margin-bottom: 10px;
+    }
+  }
+}

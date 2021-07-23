@@ -1,0 +1,58 @@
+.support {
+  border-top: 1px solid $white;
+  padding: 50px;
+
+  &--profile {
+    padding: 130px 41px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    position: relative;
+    z-index: 10;
+  }
+
+  &__wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: rgba(28, 31, 35, 0.8);
+    border-radius: 10px;
+    padding: 15px 25px 15px 10px;
+  }
+
+  &__icon {
+    width: 95px;
+    height: 95px;
+    margin-right: 10px;
+  }
+
+  &__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-right: 25px;
+
+    h3 {
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 29px;
+      color: $white;
+      margin-bottom: 5px;
+    }
+
+    p {
+      max-width: 280px;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 24px;
+      color: $white;
+    }
+  }
+}

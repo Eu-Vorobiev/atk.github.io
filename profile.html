@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru_RU">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>АТК / Профиль</title>
+
+  <link rel="stylesheet" href="fonts/Circe/stylesheet.css">
+
+  <link rel="stylesheet" href="css/normalize.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+  <header class="header header-profile">
+    <div class="container header-profile__container">
+      <a class="logo header__logo" href="index.html">
+        <img src="images/logo.svg" alt="ATK">
+      </a>
+      <nav class="nav header__nav header-profile__nav">
+        <ul class="nav__list header-profile__list">
+          <li class="nav__item header-profile__item">
+            <a class="nav__link header-profile__link active" href="#">Мои заказы</a>
+          </li>
+          <!-- /.nav__item header-profile__item -->
+          <li class="nav__item header-profile__item">
+            <a class="nav__link header-profile__link" href="#">Партнерская программа</a>
+          </li>
+          <!-- /.nav__item header-profile__item -->
+          <li class="nav__item header-profile__item">
+            <a class="nav__link header-profile__link" href="#">Смена пароля</a>
+          </li>
+          <!-- /.nav__item header-profile__item -->
+        </ul>
+        <!-- /.nav__list header-profile__list -->
+      </nav>
+      <!-- /.nav header__nav header-profile__nav -->
+      <a class="btn-login header-profile__btn" href="log-in.html">Выход</a>
+    </div>
+    <!-- /.container header-profile__container -->
+  </header>
+  <!-- /.header header-profile -->
+
+  <main class="main">
+
+    <section class="order">
+      <img class="order__bg" src="images/order-page-bg.png" alt="Profile bg">
+      <div class="container order__container">
+        <div class="order__item">
+          <img class="order__item-img" src="images/tariff-basic.png" alt="Basic">
+          <div class="order__item-content">
+            <span class="button order__status">Активен</span>
+            <h3 class="order__item-title">Пакет минимальный</h3>
+            <p class="order__item-desc order__item-desc--sm">Гарантированный доход от 10-15%</p>
+          </div>
+          <div class="order__actions">
+            <button class="button button--sm order__btn rise-btn">Повысить тариф</button>
+            <button class="order__link close-btn">Закрыть тариф</button>
+          </div>
+        </div>
+        <!-- /.order__item -->
+      </div>
+      <!-- /.container order__container -->
+    </section>
+    <!-- /.order -->
+
+    <section class="refferals">
+      <div class="container refferals__container">
+        <div class="refferals__heading">
+          <h2 class="refferals__tilte">Рефералы</h2>
+          <p>Всего: <span>23 чел.</span></p>
+        </div>
+        <!-- /.refferals__heading -->
+        <table class="refferals__table">
+          <thead>
+            <tr>
+              <th>Дата регистрации</th>
+              <th>Имя</th>
+              <th>Почта</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><time>29.03.2021</time></td>
+              <td><p>Петров Васильевич</p></td>
+              <td><a href="mailto:Petro@gmail.com">Petro@gmail.com</a></td>
+            </tr>
+            <tr>
+              <td><time>29.03.2021</time></td>
+              <td><p>Петров Васильевич</p></td>
+              <td><a href="mailto:Petro@gmail.com">Petro@gmail.com</a></td>
+            </tr>
+            <tr>
+              <td><time>29.03.2021</time></td>
+              <td><p>Петров Васильевич</p></td>
+              <td><a href="mailto:Petro@gmail.com">Petro@gmail.com</a></td>
+            </tr>
+            <tr>
+              <td><time>29.03.2021</time></td>
+              <td><p>Петров Васильевич</p></td>
+              <td><a href="mailto:Petro@gmail.com">Petro@gmail.com</a></td>
+            </tr>
+            <tr>
+              <td><time>29.03.2021</time></td>
+              <td><p>Петров Васильевич</p></td>
+              <td><a href="mailto:Petro@gmail.com">Petro@gmail.com</a></td>
+            </tr>
+            <tr>
+              <td><time>29.03.2021</time></td>
+              <td><p>Петров Васильевич</p></td>
+              <td><a href="mailto:Petro@gmail.com">Petro@gmail.com</a></td>
+            </tr>
+          </tbody>
+        </table>
+        <!-- /.refferals__table -->
+        <div class="unicode">
+          <h3 class="unicode__title">Уникальная ссылка для реферала:</h3>
+          <div class="unicode__desc">
+            <span>D654-D32DK-D23D-2D23-DASE-VV23D</span>
+            <button class="button unicode__btn">Копировать</button>
+          </div>
+        </div>
+        <!-- /.unicode -->
+      </div>
+      <!-- /.container refferals__container -->
+    </section>
+    <!-- /.refferals -->
+
+    <div class="support support--profile">
+      <div class="support__wrap">
+        <img class="support__icon" src="images/telegram-icon.svg" alt="Telegram icon">
+        <div class="support__content">
+          <h3 class="support__heading">Помощь в телеграм</h3>
+          <p class="support__text">Если у вас возникли трудности, Вы можете обратиться в поддержку</p>
+        </div>
+        <button class="button button--sm support__btn">Задать вопрос</button>
+      </div>
+    </div>
+    <!-- /.support -->
+
+  </main>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

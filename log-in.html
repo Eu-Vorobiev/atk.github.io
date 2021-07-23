@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru_RU">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ATK / Вход</title>
+
+  <link rel="stylesheet" href="fonts/Circe/stylesheet.css">
+
+  <link rel="stylesheet" href="css/normalize.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body class="login-page">
+
+  <header class="header header-login">
+    <div class="container header-login__container">
+      <a class="logo header-login__logo" href="index.html">
+        <img src="images/logo.svg" alt="ATK">
+      </a>
+      <a class="btn-login header-login__btn" href="index.html">Вернуться на сайт</a>
+    </div>
+    <!-- /.container -->
+  </header>
+  <!-- /.header.header-login -->
+
+  <main>
+    <section class="login-page__content">
+      <div class="container login-page__container">
+        <form class="form form-login" action="#" method="POST">
+          <h2 class="form-login__title">Вход</h2>
+          <label class="form-login__label" for="email">
+            <input class="form__input form__input--login" type="email" placeholder="E-mail" required>
+          </label>
+          <label class="form-login__label" for="password">
+            <input class="form__input form__input--login" type="password" placeholder="Пароль" required>
+          </label>
+          <a class="button button--lg form__btn form-login__btn" href="profile.html">Войти в кабинет</a>
+          <div class="form-login__actions">
+            <a class="form-login__link" href="#">Восстановить пароль</a>
+            <a class="form-login__link" href="#">Создать аккаунт</a>
+          </div>
+        </form>
+        <!-- /.form login-page__form -->
+        <div class="support login-page__support">
+          <div class="support__wrap">
+            <img class="support__icon" src="images/telegram-icon.svg" alt="Telegram icon">
+            <div class="support__content">
+              <h3 class="support__heading">Помощь в телеграм</h3>
+              <p class="support__text">Если у вас возникли трудности, Вы можете обратиться в поддержку</p>
+            </div>
+            <button class="button button--sm support__btn">Задать вопрос</button>
+          </div>
+        </div>
+        <!-- /.support -->
+      </div>
+      <!-- /.container login-page__container -->
+    </section>
+    <!-- /.login-page__content -->
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>

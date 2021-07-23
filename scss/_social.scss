@@ -1,6 +1,10 @@
 .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-right: 10px;
 
   &__item {
@@ -18,13 +22,16 @@
 
   &__link {
     &:hover {
-      filter: brightness(150%);
+      -webkit-filter: brightness(150%);
+              filter: brightness(150%);
     }
 
     img {
       vertical-align: middle;
-      object-fit: cover;
-      object-position: center;
+      -o-object-fit: cover;
+         object-fit: cover;
+      -o-object-position: center;
+         object-position: center;
       width: 24px;
       height: 24px;
       border-radius: 50%;
